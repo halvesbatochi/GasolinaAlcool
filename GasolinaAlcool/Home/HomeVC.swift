@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  GasolinaAlcool
 //
 //  Created by Henrique Alves Batochi on 19/11/22.
@@ -7,7 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
+    
+    var screen: HomeScreen?
+    
+    override func loadView() {
+        screen = HomeScreen()
+        view = screen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
