@@ -13,9 +13,6 @@
 		5C94AF4D2928BE3A00028D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C94AF4B2928BE3A00028D44 /* Main.storyboard */; };
 		5C94AF4F2928BE3B00028D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C94AF4E2928BE3B00028D44 /* Assets.xcassets */; };
 		5C94AF522928BE3B00028D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C94AF502928BE3B00028D44 /* LaunchScreen.storyboard */; };
-		5C94AF5D2928BE3B00028D44 /* GasolinaAlcoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94AF5C2928BE3B00028D44 /* GasolinaAlcoolTests.swift */; };
-		5C94AF672928BE3B00028D44 /* GasolinaAlcoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94AF662928BE3B00028D44 /* GasolinaAlcoolUITests.swift */; };
-		5C94AF692928BE3B00028D44 /* GasolinaAlcoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94AF682928BE3B00028D44 /* GasolinaAlcoolUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		5C94AF512928BE3B00028D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C94AF532928BE3B00028D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C94AF582928BE3B00028D44 /* GasolinaAlcoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasolinaAlcoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C94AF5C2928BE3B00028D44 /* GasolinaAlcoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolinaAlcoolTests.swift; sourceTree = "<group>"; };
 		5C94AF622928BE3B00028D44 /* GasolinaAlcoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasolinaAlcoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C94AF662928BE3B00028D44 /* GasolinaAlcoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolinaAlcoolUITests.swift; sourceTree = "<group>"; };
-		5C94AF682928BE3B00028D44 /* GasolinaAlcoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolinaAlcoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				5C94AF442928BE3A00028D44 /* GasolinaAlcool */,
-				5C94AF5B2928BE3B00028D44 /* GasolinaAlcoolTests */,
-				5C94AF652928BE3B00028D44 /* GasolinaAlcoolUITests */,
 				5C94AF432928BE3A00028D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				5C94AF532928BE3B00028D44 /* Info.plist */,
 			);
 			path = GasolinaAlcool;
-			sourceTree = "<group>";
-		};
-		5C94AF5B2928BE3B00028D44 /* GasolinaAlcoolTests */ = {
-			isa = PBXGroup;
-			children = (
-				5C94AF5C2928BE3B00028D44 /* GasolinaAlcoolTests.swift */,
-			);
-			path = GasolinaAlcoolTests;
-			sourceTree = "<group>";
-		};
-		5C94AF652928BE3B00028D44 /* GasolinaAlcoolUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5C94AF662928BE3B00028D44 /* GasolinaAlcoolUITests.swift */,
-				5C94AF682928BE3B00028D44 /* GasolinaAlcoolUITestsLaunchTests.swift */,
-			);
-			path = GasolinaAlcoolUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C94AF5D2928BE3B00028D44 /* GasolinaAlcoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C94AF692928BE3B00028D44 /* GasolinaAlcoolUITestsLaunchTests.swift in Sources */,
-				5C94AF672928BE3B00028D44 /* GasolinaAlcoolUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,9 +424,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.halvesbatochi.GasolinaAlcool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -480,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.halvesbatochi.GasolinaAlcool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
