@@ -8,6 +8,7 @@
 import UIKit
 
 class CalculatorVC: UIViewController {
+
     
     var screen: CalculatorScreen?
     
@@ -18,5 +19,17 @@ class CalculatorVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        screen?.delegate(delegate: self)
     }
+}
+
+extension CalculatorVC: CalculatorScreenDelegate {
+    func tappedCalculateButton() {
+        print(#function)
+    }
+    
+    func tappedBackButton() {
+        print(#function)
+    }
+    
 }
