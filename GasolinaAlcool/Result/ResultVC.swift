@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultVCViewController: UIViewController {
+class ResultVC: UIViewController {
     
     var screen: ResultScreen?
     

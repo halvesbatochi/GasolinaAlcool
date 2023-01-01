@@ -55,11 +55,16 @@ extension CalculatorVC: CalculatorScreenDelegate {
             let ethanolPrice: Double = (formatter.number(from: screen?.ethanolPriceTextField.text ?? "0.0") as? Double) ?? 0.0
             let gasPrice: Double = (formatter.number(from: screen?.gasPriceTextField.text ?? "0.0") as? Double) ?? 0.0
             
+            let vc = ResultVC()
+            
+            
             if ethanolPrice / gasPrice > 0.7 {
                 print("Melhor utilizar Gasolina!")
             } else {
                 print("Melhor utilizar Álcool!")
             }
+            
+            navigationController?.pushViewController(vc, animated: true)
         }
         
     }
