@@ -20,6 +20,7 @@
 		5C94AF4A2928BE3A00028D44 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94AF492928BE3A00028D44 /* HomeVC.swift */; };
 		5C94AF4F2928BE3B00028D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C94AF4E2928BE3B00028D44 /* Assets.xcassets */; };
 		5C94AF522928BE3B00028D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C94AF502928BE3B00028D44 /* LaunchScreen.storyboard */; };
+		66F7EA21354F81B49691EA94 /* Pods_GasolinaAlcool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F4FEE3EE89D7B3E6C5BB83 /* Pods_GasolinaAlcool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,9 @@
 		5C94AF4E2928BE3B00028D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C94AF512928BE3B00028D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C94AF532928BE3B00028D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45300667A0739E2813B251F /* Pods-GasolinaAlcool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasolinaAlcool.release.xcconfig"; path = "Target Support Files/Pods-GasolinaAlcool/Pods-GasolinaAlcool.release.xcconfig"; sourceTree = "<group>"; };
+		D1F28BF7610C493F14B44928 /* Pods-GasolinaAlcool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasolinaAlcool.debug.xcconfig"; path = "Target Support Files/Pods-GasolinaAlcool/Pods-GasolinaAlcool.debug.xcconfig"; sourceTree = "<group>"; };
+		E5F4FEE3EE89D7B3E6C5BB83 /* Pods_GasolinaAlcool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasolinaAlcool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F7EA21354F81B49691EA94 /* Pods_GasolinaAlcool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F024481BE895A3CEB0D797A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1F28BF7610C493F14B44928 /* Pods-GasolinaAlcool.debug.xcconfig */,
+				C45300667A0739E2813B251F /* Pods-GasolinaAlcool.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C2E94E12A13290FC30E4C40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5F4FEE3EE89D7B3E6C5BB83 /* Pods_GasolinaAlcool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C098F052929618C007FE220 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +147,8 @@
 			children = (
 				5C94AF442928BE3A00028D44 /* GasolinaAlcool */,
 				5C94AF432928BE3A00028D44 /* Products */,
+				1F024481BE895A3CEB0D797A /* Pods */,
+				3C2E94E12A13290FC30E4C40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C94AF6C2928BE3B00028D44 /* Build configuration list for PBXNativeTarget "GasolinaAlcool" */;
 			buildPhases = (
+				1BBA5F57BE8B9161BA791D7D /* [CP] Check Pods Manifest.lock */,
 				5C94AF3E2928BE3A00028D44 /* Sources */,
 				5C94AF3F2928BE3A00028D44 /* Frameworks */,
 				5C94AF402928BE3A00028D44 /* Resources */,
+				F76FE2F4EBAA7C9C5CC61244 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +243,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BBA5F57BE8B9161BA791D7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GasolinaAlcool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F76FE2F4EBAA7C9C5CC61244 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GasolinaAlcool/Pods-GasolinaAlcool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GasolinaAlcool/Pods-GasolinaAlcool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GasolinaAlcool/Pods-GasolinaAlcool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C94AF3E2928BE3A00028D44 /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		5C94AF6D2928BE3B00028D44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F28BF7610C493F14B44928 /* Pods-GasolinaAlcool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +467,7 @@
 		};
 		5C94AF6E2928BE3B00028D44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45300667A0739E2813B251F /* Pods-GasolinaAlcool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
