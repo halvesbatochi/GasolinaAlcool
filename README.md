@@ -57,7 +57,6 @@ extension UITextField {
 ```
 
 * No objeto UITextField invocar o método obj.addDoneButtonOnKeyboard()
-<br/>
 <img src="5.png" width="100"> 
 
 
