@@ -62,7 +62,7 @@ extension UITextField {
 
 ## Snapshots
 
-<img src="1.png" width="200">  
+<img src="1.png" width="200" align="center">  
 <br/>
 
 <img src="2.png" width="200"> 
